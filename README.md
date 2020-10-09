@@ -6,3 +6,13 @@
 
 ## Install ROS
 - [http://wiki.ros.org/ROSberryPi/Installing%20ROS%20Kinetic%20on%20the%20Raspberry%20Pi](http://wiki.ros.org/ROSberryPi/Installing%20ROS%20Kinetic%20on%20the%20Raspberry%20Pi)
+
+### Install ROS on Raspberry Pi Ubuntu Mate
+```sh
+$ sudo apt-get update
+$ sudo apt-get upgrade
+$ wget https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_kinetic_rp3.sh && chmod 755 ./install_ros_kinetic_rp3.sh && bash ./install_ros_kinetic_rp3.sh
+$ sudo apt-get install ros-kinetic-rosserial-python ros-kinetic-tf
+$ source /opt/ros/kinetic/setup.bash
+$ cd ~/catkin_ws && catkin_make -j1
+```
