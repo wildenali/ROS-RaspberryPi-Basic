@@ -31,7 +31,7 @@ $ cd ~/catkin_ws && catkin_make -j1
 5. Sourcing the Setup file
 	- `$ . ~/catkin_ws/devel/setup.bash`
 
-## ROS Nodes
+## `ROS Nodes`
 > Test ros node
 1. Go to workspace ros
 	- `$ cd ~/catkin_ws/src`
