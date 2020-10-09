@@ -31,3 +31,33 @@ $ cd ~/catkin_ws && catkin_make -j1
 5. Sourcing the Setup file
 	- `$ . ~/catkin_ws/devel/setup.bash`
 
+## ROS Nodes
+>> Test ros node
+1. Go to workspace ros
+	- `$ cd ~/catkin_ws/src`
+2. Run roscore
+	- `$ roscore`
+3. Check node with rosnode list
+	- `$ rosnode list`<br/>
+	will be show `/rosout`,it is a node running
+4. Check info inside of a `/rosout` node
+	- `$ rosnode info /rosout`
+
+>> Try another example, turtlesim_node
+note: if turtlesim node not yet already installed on your os, please following instruction below
+- `$ sudo apt-get install ros-kinetic-turtlesim`
+- `$ sudo rosdep init`
+- `$ rosdep update`
+- `$ source /opt/ros/kinetic/setup.bash`
+
+1. Go to workspace ros
+	- `$ cd ~/catkin_ws/src`
+2. Run roscore
+	- `$ roscore`
+3. Run the node using rosrun
+	- `$ rosrun turtlesim turtlesim_node`
+4. Check nodes with rosnode list
+	- `$ rosnode list`
+5. Check info inside of a `/rosout` node
+	- `$ rosnode info /rosout` atau
+	- `$ rosnode info /turtlesim`
