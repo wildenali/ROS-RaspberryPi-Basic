@@ -206,3 +206,12 @@ rostopic hz reports the rate at which data is published
 	- `$ rosservice call /clear`
 4. How to run `rosparams get`
 	- `$ rosparam get /background_b`
+
+## `ROS Launch`
+roslaunch is package which use to run file together like node, etc
+1. Creating a new ros package
+	- `$ cd ~/catkin_ws/src/ROS-RaspberryPi-Basic`
+	- `$ catkin_create_pkg ab_roslaunch std_msgs rospy`
+	- `$ cd ~/catkin_ws`
+	- `$ catkin_make`
+	- `$ . ~/catkin_ws/devel/setup.bash`
