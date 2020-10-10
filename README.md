@@ -132,3 +132,29 @@ rostopic pub publishes data on to a topic current advertised
 2. Try to move turtle1 use rostopic pub
 	- `$ rostopic pub -1 /turtle1/cmd_vel geometry_msgs/Twist -- '[2.0, 0.0, 0.0]' '[0.0, 0.0, 1.8]'`
 	- for more info please visit [wiki.ros.org/ROS/Tutorials/UnderstandingTopics](wiki.ros.org/ROS/Tutorials/UnderstandingTopics)
+
+#### ROS Topic hz
+rostopic hz reports the rate at which data is published
+1. Make sure the command below has been executed
+	- `$ roscore`
+	- `$ rosrun turtlesim turtlesim_node`
+2. Execute the rostopic hz
+	- `$ rostopic hz /turtle1/pose`
+
+## rqt_plot
+1. Install rqt_plot. If already installed please skip this step
+	- Note: make sure `$ pip list --upgrade pip` and `$ python -m pip install -U matplotlib`
+	- `$ sudo apt-get install ros-kinetic-rqt`
+	- `$ sudo apt-get install ros-kinetic-rqt-common-plugins`
+2. Make sure the command below has been executed
+	- `$ roscore`
+	- `$ rosrun turtlesim turtlesim_node`
+	- `$ rosrun turtlesim turtle_teleop_key`
+3. Execute the rqt_plot
+	- `$ rosrun rqt_plot rqt_plot`
+4. In the rqt_plot window, fill Topic with
+	- `/turtle/pose/x` and enter
+	- `/turtle/pose/y` and enter
+5. Go to terminal turtle_teleop_key and press arrow button to move the turtle
+6. See what happened to the rqt_plot window
+7. Amazing kan
