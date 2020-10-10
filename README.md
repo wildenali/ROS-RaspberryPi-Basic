@@ -102,7 +102,8 @@ Type `$ rostopic -h`<br/>
 | rostopic list | list active topics |
 | rostopic pub | publish data to topic |
 | rostopic type | print topic or field type |
-<br/>
+
+
 How to test the topics
 1. Open a new terminal
 2. Try the rostopic echo. Type
