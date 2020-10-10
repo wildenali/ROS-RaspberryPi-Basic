@@ -130,5 +130,5 @@ rostopic pub publishes data on to a topic current advertised
 	- `$ roscore`
 	- `$ rosrun turtlesim turtlesim_node`
 2. Try to move turtle1 use rostopic pub
-	- `$ rostopic pub -1 /turtle1/cmd_vel geometry_msgs/Twist -- '[2.0, 0.0, 0.0]' '[0.0, 0.0, 1.8]'
+	- `$ rostopic pub -1 /turtle1/cmd_vel geometry_msgs/Twist -- '[2.0, 0.0, 0.0]' '[0.0, 0.0, 1.8]'`
 	- for more info please visit [wiki.ros.org/ROS/Tutorials/UnderstandingTopics](wiki.ros.org/ROS/Tutorials/UnderstandingTopics)
