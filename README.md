@@ -113,3 +113,13 @@ How to test the topics
 3. Try the rostopic list -v
 	- `$ rostopic list -v`
 	- It will show the active topics
+
+#### ROS Message
+1. Make sure the command below has been executed
+	- `$ roscore`
+	- `$ rosrun turtlesim turtlesim_node`
+2. Open a new terminal and exucute
+	- `$ rostopic type /turtle1/cmd_vel`
+	- Shoud get geometry_msgs/Twist
+3. Show the details of mesage using rosmsg
+	- `$ rosmsg show geometry_msgs/Twist`
