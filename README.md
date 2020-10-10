@@ -193,3 +193,16 @@ rostopic hz reports the rate at which data is published
 		 theta: 0.0
 		 name: 'kurakura'"`
 	- etc
+
+## `ROS Parameter`
+1. Make sure the command below has been executed
+	- `$ roscore`
+	- `$ rosrun turtlesim turtlesim_node`
+2. How to find out which parameters are active is to execute the program below
+	- `$ rosparam list`
+	- Will show all active parameters
+3. How to run `rosparams set`
+	- `$ rosparam set /background_b 150`
+	- `$ rosservice call /clear`
+4. How to run `rosparams get`
+	- `$ rosparam get /background_b`
