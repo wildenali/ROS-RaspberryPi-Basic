@@ -90,8 +90,9 @@ note: if rqt_graph not yet already installed on your os, please following instru
 	- `$ rosrun rqt_graph rqt_graph`
 
 #### ROS Topic sub-commands
-Type `$ rostopic -h`
+Type `$ rostopic -h`<br/>
 | rostopic | Description |
+| -------- | ----------- |
 | rostopic bw | display bandwidth used by topic |
 | rostopic delay | display delay of topic from timestamp in header |
 | rostopic echo | print messages to screen |
