@@ -91,15 +91,16 @@ note: if rqt_graph not yet already installed on your os, please following instru
 
 #### ROS Topic sub-commands
 Type `$ rostopic -h`
-- rostopic bw		display bandwidth used by topic
-- rostopic delay	display delay of topic from timestamp in header
-- rostopic echo		print messages to screen
-- rostopic find		find topics by type
-- rostopic hz		display publishing rate of topic    
-- rostopic info		print information about active topic
-- rostopic list		list active topics
-- rostopic pub		publish data to topic
-- rostopic type		print topic or field type
+| rostopic | Description |
+| rostopic bw | display bandwidth used by topic |
+| rostopic delay | display delay of topic from timestamp in header |
+| rostopic echo | print messages to screen |
+| rostopic find | find topics by type |
+| rostopic hz | display publishing rate of topic |    
+| rostopic info | print information about active topic |
+| rostopic list | list active topics |
+| rostopic pub | publish data to topic |
+| rostopic type | print topic or field type |
 How to test the topics
 1. Open a new terminal
 2. Try the rostopic echo. Type
