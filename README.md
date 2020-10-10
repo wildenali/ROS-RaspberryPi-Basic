@@ -102,7 +102,10 @@ Type `$ rostopic -h`
 - rostopic type		print topic or field type
 How to test the topics
 1. Open a new terminal
-2. Type
+2. Try the rostopic echo. Type
 	- `$ rostopic echo /turtle1/cmd_vel`
-3. Move the turtle1 using turtle_teleop_key
-4. Have a look on the terminal. It will show the information about cmd_vel node
+	- Move the turtle1 using turtle_teleop_key
+	- Have a look on the terminal. It will show the information about cmd_vel node
+3. Try the rostopic list -v
+	- `$ rostopic list -v`
+	- It will show the active topics
