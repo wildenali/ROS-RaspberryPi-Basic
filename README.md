@@ -163,3 +163,33 @@ rostopic hz reports the rate at which data is published
 	- Execute `$ rosrun rqt_logger_level rqt_logger_level`
 	- Move the turlesim with turtle_teleop_key until reach the end of window
 	- See on the rqt_console and rqt_logger_level windows will show information
+
+
+## `ROS Service`
+1. Make sure the command below has been executed
+	- `$ roscore`
+	- `$ rosrun turtlesim turtlesim_node`
+	- `$ rosrun turtlesim turtle_teleop_key`
+2. How to check the active rosservice
+	- `$ rosservice list`
+3. How to check the rosservice type
+	- `$ rosservice type /clear`
+	- `$ rosservice type /kill`
+	- `$ rosservice type /reset`
+	- `$ rosservice type /spawn`
+	- etc
+3. How to check the rosservice arguments
+	- `$ rosservice type /clear | rossrv show`
+	- `$ rosservice type /kill  | rossrv show`
+	- `$ rosservice type /reset | rossrv show`
+	- `$ rosservice type /spawn | rossrv show`
+	- etc
+5. How to call the rosservice
+	- `$ rosservice call /clear`
+	- `$ rosservice call /kill "name: 'turtle1'"`
+	- `$ rosservice call /reset `
+	- `$ rosservice call /spawn "x: 1.0
+		 y: 2.0
+		 theta: 0.0
+		 name: 'kurakura'"`
+	- etc
