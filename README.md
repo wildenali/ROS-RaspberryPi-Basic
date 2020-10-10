@@ -158,3 +158,8 @@ rostopic hz reports the rate at which data is published
 5. Go to terminal turtle_teleop_key and press arrow button to move the turtle
 6. See what happened to the rqt_plot window
 7. Amazing kan
+8. Test rqt_console and rqt_logger_level for debuging
+	- Execute `$ rosrun rqt_console rqt_console`
+	- Execute `$ rosrun rqt_logger_level rqt_logger_level`
+	- Move the turlesim with turtle_teleop_key until reach the end of window
+	- See on the rqt_console and rqt_logger_level windows will show information
