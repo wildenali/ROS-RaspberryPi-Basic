@@ -141,7 +141,7 @@ rostopic hz reports the rate at which data is published
 2. Execute the rostopic hz
 	- `$ rostopic hz /turtle1/pose`
 
-## rqt_plot
+## `rqt_plot`
 1. Install rqt_plot. If already installed please skip this step
 	- Note: make sure `$ pip list --upgrade pip` and `$ python -m pip install -U matplotlib`
 	- `$ sudo apt-get install ros-kinetic-rqt`
