@@ -31,7 +31,7 @@ $ cd ~/catkin_ws && catkin_make -j1
 5. Sourcing the Setup file
 	- `$ . ~/catkin_ws/devel/setup.bash`
 
-## `ROS Nodes`
+## `ROS Node`
 > Test ros node
 1. Go to workspace ros
 	- `$ cd ~/catkin_ws/src`
@@ -61,3 +61,48 @@ note: if turtlesim node not yet already installed on your os, please following i
 5. Check info inside of a `/rosout` node
 	- `$ rosnode info /rosout` atau
 	- `$ rosnode info /turtlesim`
+
+## `ROS Topic`
+> Try turtlesim_node to explore ros topic function
+1. Go to workspace ros
+	- `$ cd ~/catkin_ws/src`
+2. Run roscore
+	- `$ roscore`
+3. Run the node using rosrun
+	- `$ rosrun turtlesim turtlesim_node`
+4. Check nodes with rosnode list
+	- `$ rosnode list`
+5. Run turtle_teleop_key topic
+	- `$ rosrun turtlesim turtle_teleop_key`
+
+> Try another example topic, rqt_graph
+note: if rqt_graph not yet already installed on your os, please following instruction below
+- `$ sudo apt-get install ros-kinetic-rqt-common-plugins`
+1. Go to workspace ros
+	- `$ cd ~/catkin_ws/src`
+2. Run roscore
+	- `$ roscore`
+3. Run the node using rosrun
+	- `$ rosrun turtlesim turtlesim_node`
+4. Run turtle_teleop_key topic
+	- `$ rosrun turtlesim turtle_teleop_key`
+5. Run the rqt_graph using rosrun
+	- `$ rosrun rqt_graph rqt_graph`
+
+#### ROS Topic sub-commands
+Type `$ rostopic -h`
+- rostopic bw		display bandwidth used by topic
+- rostopic delay	display delay of topic from timestamp in header
+- rostopic echo		print messages to screen
+- rostopic find		find topics by type
+- rostopic hz		display publishing rate of topic    
+- rostopic info		print information about active topic
+- rostopic list		list active topics
+- rostopic pub		publish data to topic
+- rostopic type		print topic or field type
+How to test the topics
+1. Open a new terminal
+2. Type
+	- `$ rostopic echo /turtle1/cmd_vel`
+3. Move the turtle1 using turtle_teleop_key
+4. Have a look on the terminal. It will show the information about cmd_vel node
