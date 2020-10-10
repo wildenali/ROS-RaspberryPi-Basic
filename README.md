@@ -216,6 +216,6 @@ roslaunch is package which use to run file together like node, etc
 	- `$ catkin_make`
 	- `$ . ~/catkin_ws/devel/setup.bash`
 2. Create README.md file for notes
-	- `$ ~/catkin/src/ROS-RaspberryPi-Basic/ab_roslaunch`
+	- `$ cd ~/catkin/src/ROS-RaspberryPi-Basic/ab_roslaunch`
 	- `$ touch README.md`
 3. For further tutorials about ROS Launch please visit [https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/ab_roslaunch](https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/ab_roslaunch)
