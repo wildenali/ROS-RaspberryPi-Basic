@@ -231,3 +231,4 @@ msg are simple text file that describe the fields of a ROS message
 2. Create README.md file for notes
 	- `$ cd ~/catkin_ws/src/ROS-RaspberryPi-Basic/ac_contoh_msg`
 	- `$ touch README.md`
+3. For further this tutorials about ROS message please visit [https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/ac_contoh_msg](https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/ac_contoh_msg)
