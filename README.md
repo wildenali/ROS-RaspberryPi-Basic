@@ -216,6 +216,18 @@ roslaunch is package which use to run file together like node, etc
 	- `$ catkin_make`
 	- `$ . ~/catkin_ws/devel/setup.bash`
 2. Create README.md file for notes
-	- `$ cd ~/catkin/src/ROS-RaspberryPi-Basic/ab_roslaunch`
+	- `$ cd ~/catkin_ws/src/ROS-RaspberryPi-Basic/ab_roslaunch`
 	- `$ touch README.md`
 3. For further tutorials about ROS Launch please visit [https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/ab_roslaunch](https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/ab_roslaunch)
+
+## `msg`
+msg are simple text file that describe the fields of a ROS message
+1. Creating a new ros package
+	- `$ cd ~/catkin_ws/src/ROS-RaspberryPi-Basic`
+	- `$ catkin_create_pkg ac_contoh_msg std_msgs rospy`
+	- `$ cd ~/catkin_ws`
+	- `$ catkin_make`
+	- `$ . ~/catkin_ws/devel/setup.bash`
+2. Create README.md file for notes
+	- `$ cd ~/catkin_ws/src/ROS-RaspberryPi-Basic/ac_contoh_msg`
+	- `$ touch README.md`
