@@ -58,3 +58,7 @@ References:
 			std_msgs
 		)
 		```
+5. How to use rosmsg
+	- Open a new terminal
+	- `$ rosmsg show ac_contoh_msg/Num` or
+	- `$ rosmsg show Num`
