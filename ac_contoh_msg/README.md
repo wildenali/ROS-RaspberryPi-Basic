@@ -58,7 +58,10 @@ References:
 			std_msgs
 		)
 		```
-5. How to use rosmsg
+5. Build the project
 	- Open a new terminal
+	- `$ cd ~/catkin_ws`
+	- `$ catkin_make`
+6. How to use rosmsg
 	- `$ rosmsg show ac_contoh_msg/Num` or
 	- `$ rosmsg show Num`
