@@ -232,3 +232,15 @@ msg are simple text file that describe the fields of a ROS message
 	- `$ cd ~/catkin_ws/src/ROS-RaspberryPi-Basic/ac_contoh_msg`
 	- `$ touch README.md`
 3. For further this tutorials about ROS message please visit [https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/ac_contoh_msg](https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/ac_contoh_msg)
+
+## `srv`
+srv have a request and a response
+1. Creating a new ros package
+	- `$ cd ~/catkin_ws/src/ROS-RaspberryPi-Basic`
+	- `$ catkin_create_pkg ad_contoh_srv std_msgs rospy`
+	- `$ cd ~/catkin_ws`
+	- `$ catkin_make`
+	- `$ . ~/catkin_ws/devel/setup.bash`
+2. Create README.md file for notes
+	- `$ cd ~/catkin_ws/src/ROS-RaspberryPi-Basic/ad_contoh_srv`
+	- `$ touch README.md`
