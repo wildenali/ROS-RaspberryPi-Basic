@@ -12,7 +12,8 @@ def pengirim():
 	rospy.init_node('py_publisher', anonymous = True)
 	
 	# set the loop rate
-	rate = rospy.Rate(1)	# 10 hz
+	# rate = rospy.Rate(1)	# 10 hz
+	rate = rospy.Rate(1000)	# 10 hz
 	
 	i = 0
 	while not rospy.is_shutdown():
