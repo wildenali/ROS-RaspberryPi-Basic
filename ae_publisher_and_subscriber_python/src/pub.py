@@ -6,7 +6,7 @@ from std_msgs.msg import String
 
 def pengirim():
 	# membuat publisher baru, dengan spesifik nama 'py_kirim', dan queue_size = 10
-	pub = rospy.Publisher('py_kirim', String, queue = 10)
+	pub = rospy.Publisher('py_kirim', String, queue_size = 10)
 	
 	# inisialisasi node dulu dengan nama 'py_publisher'
 	rospy.init_node('py_publisher', anonymous = True)
