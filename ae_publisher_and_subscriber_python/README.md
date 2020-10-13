@@ -57,3 +57,48 @@ References:
 	- `$ cd ~/catkin_ws/`
 	- `$ roscore`
 	- Open a new tab and type `$ rosrun ae_publisher_and_subscriber_python pub.py`
+	- Close the all terminal to stop it
+	
+6. Creata a subscriber file called `sub.py`
+	- Open a new terminal
+	- `$ cd ~/catkin_ws/src/ROS-RaspberryPi-Basic/ae_publisher_and_subscriber_python`
+	- `$ cd src`
+	- `$ touch sub.py`
+	- `$ chmod +x sub.py`	change the permissions, type `$ la -la` to check permissions status
+7. Edit the `sub.py` file like below
+	```sh
+	#!/usr/bin/env python
+
+	import rospy
+	from std_msgs.msg import String
+
+	def callback(pesan):
+		# get called id(): Get fully resolve name of local node
+		rospy.loginfo(rospy.get_caller_id() + "Berhitung woy %s", pesan.data)
+
+	def listener():
+		rospy.init_node('py_subscriber', anonymous=True)
+		rospy.Subscriber('py_kirim', String, callback)
+		
+		rospy.spin()
+
+	if __name__ == '__main__':
+		listener()
+	```
+8. Make sure the python script get installed properly and use the right python interpreter
+	- Open CMakelists.txt
+	- Uncomment and edit the line of code like below
+		```sh
+		catkin_install_python(PROGRAMS
+			src/pub.py
+			src/sub.py
+			DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+		)
+		```
+4. Build the node
+	- `$ cd ~/catkin_ws/`
+	- `$ catkin_make`
+5. Run the node
+	- `$ roscore`
+	- Open a new tab and type `$ rosrun ae_publisher_and_subscriber_python pub.py`
+	- Open a new tab and type `$ rosrun ae_publisher_and_subscriber_python sub.py`
