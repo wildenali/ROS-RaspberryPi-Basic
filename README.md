@@ -257,3 +257,15 @@ srv have a request and a response
 	- `$ cd ~/catkin_ws/src/ROS-RaspberryPi-Basic/ae_publisher_and_subscriber_python`
 	- `$ touch README.md`
 3. For further this tutorials about ROS message please visit [https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/ae_publisher_and_subscriber_python](https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/ae_publisher_and_subscriber_python)
+
+## `Service and Client`
+1. Creating a new ros package
+	- `$ cd ~/catkin_ws/src/ROS-RaspberryPi-Basic`
+	- `$ catkin_create_pkg af_service_and_client std_msgs rospy`
+	- `$ cd ~/catkin_ws`
+	- `$ catkin_make`
+	- `$ . ~/catkin_ws/devel/setup.bash`
+2. Create README.md file for notes
+	- `$ cd ~/catkin_ws/src/ROS-RaspberryPi-Basic/af_service_and_client`
+	- `$ touch README.md`
+3. For further this tutorials about ROS message please visit [https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/af_service_and_client](https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/af_service_and_client)
