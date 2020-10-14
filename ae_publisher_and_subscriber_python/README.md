@@ -95,10 +95,10 @@ References:
 			DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 		)
 		```
-4. Build the node
+9. Build the node
 	- `$ cd ~/catkin_ws/`
 	- `$ catkin_make`
-5. Run the node
+10. Run the node
 	- `$ roscore`
 	- Open a new tab and type `$ rosrun ae_publisher_and_subscriber_python pub.py`
 	- Open a new tab and type `$ rosrun ae_publisher_and_subscriber_python sub.py`
