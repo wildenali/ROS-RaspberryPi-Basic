@@ -24,7 +24,8 @@ Kita akan recording and playing back pergerakan turtlesim
 4. Check rosbag file
 	- `$ cd ~/catkin_ws/src/ROS-RaspberryPi-Basic/ag_rosbag/a_recording_and_playing_back_data`
 	- `$ rosbag info 2020-10-17-10-50-17.bag`
-4. Play back rosbag file
+5. Play back rosbag file
 	- `$ cd ~/catkin_ws/src/ROS-RaspberryPi-Basic/ag_rosbag/a_recording_and_playing_back_data`
 	- Reset the turtlesim `$ rosservice call /reset`
 	- `$ rosbag play 2020-10-17-10-50-17.bag`
+	- Can rn robag with argument `$ rosbag play -r 2 2020-10-17-10-50-17.bag`. The number 2 mean the turtlesim will 2 times faster
