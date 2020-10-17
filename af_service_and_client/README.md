@@ -49,7 +49,7 @@ References:
 7. How to use rossrv
 	- `$ rossrv show af_service_and_client/af_penjumlahan` or
 	- `$ rossrv show af_penjumlahan`
-8. Creata a service node file called `af_server.py`
+8. Creata a `SERVICE NODE` file called `af_server.py`
 	- `$ cd ~/catkin_ws/src/ROS-RaspberryPi-Basic/af_service_and_client/src`
 	- `$ touch af_server.py`
 	- `$ chmod +x af_server.py`	change the permissions, to check type `$ ls -la`
