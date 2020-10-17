@@ -100,4 +100,62 @@ References:
 	- `$ cd ~/catkin_ws/`
 	- `$ roscore`
 	- Open a new tab and type `$ rosrun af_service_and_client af_server.py`
-	- Close the all terminal to stop it
+	- Close the all terminal to stop them
+6. Creata `SERVICE NODE` file called `af_client.py`
+	- Open a new terminal
+	- `$ cd ~/catkin_ws/src/ROS-RaspberryPi-Basic/af_service_and_client`
+	- `$ cd src`
+	- `$ touch af_client.py`
+	- `$ chmod +x af_client.py`	change the permissions, type `$ la -la` to check permissions status
+7. Edit the `af_client.py` file like below
+	```sh
+	#!/usr/bin/env python
+
+	import sys
+	import rospy
+
+	from af_service_and_client.srv import af_penjumlahan
+	from af_service_and_client.srv import af_penjumlahanRequest
+	from af_service_and_client.srv import af_penjumlahanResponse
+
+	def penjumlahanClient(x,y):
+		rospy.wait_for_service('penjumlahan')
+		try:
+			penjumlahan = rospy.ServiceProxy('penjumlahan', af_penjumlahan)
+			respon1 = penjumlahan(x,y)
+			return respon1.sum
+		except rospy.ServiceException, e:
+			print("Service GAGAL di panggil: %s" %e)
+
+	def usage():
+		return "%s [x y]" %sys.argv[0]
+
+	if __name__ == '__main__':
+		if len(sys.argv) == 3:
+			x = int(sys.argv[1])
+			y = int(sys.argv[2])
+		else:
+			print(usage())
+			sys.exit(1)
+		
+		print("Rekues in %s + %s" %(x,y))
+		print("%s + %s = %s" %(x,y, penjumlahanClient(x,y)))
+	```
+8. Make sure the python script get installed properly and use the right python interpreter
+	- Open CMakelists.txt
+	- Uncomment and edit the line of code like below
+		```sh
+		catkin_install_python(PROGRAMS
+			src/af_server.py
+			src/af_client.py
+			DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+		)
+		```
+11. Build the node
+	- `$ cd ~/catkin_ws/`
+	- `$ catkin_make`
+2. Run the node
+	- `$ cd ~/catkin_ws/`
+	- `$ roscore`
+	- Open a new tab and type `$ rosrun af_service_and_client af_server.py`
+	- Open a new tab and type `$ rosrun af_service_and_client af_client.py 3 5`
