@@ -278,3 +278,15 @@ srv have a request and a response
 	- `$ cd ag_rosbag`
 	- `$ touch README.md`
 2. For further this tutorials about ROS message please visit [https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/ag_rosbag](https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/ag_rosbag)
+
+## `Action`
+1. Creating a new ros package
+	- `$ cd ~/catkin_ws/src/ROS-RaspberryPi-Basic`
+	- `$ catkin_create_pkg ah_action std_msgs rospy`
+	- `$ cd ~/catkin_ws`
+	- `$ catkin_make`
+	- `$ . ~/catkin_ws/devel/setup.bash`
+2. Create README.md file for notes
+	- `$ cd ~/catkin_ws/src/ROS-RaspberryPi-Basic/ah_action`
+	- `$ touch README.md`
+3. For further this tutorials about ROS message please visit [https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/ah_action](https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/ah_action)
