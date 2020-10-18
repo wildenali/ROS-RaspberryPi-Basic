@@ -66,3 +66,46 @@ References:
 		#  DEPENDS system_lib
 		)
 		```
+6. Build the project
+	- Open a new terminal
+	- `$ . ~/catkin_ws/devel/setup.bash`
+	- `$ cd ~/catkin_ws`
+	- `$ catkin_make`
+7. Creata a `Action node` file called `ah_action_server.py`
+	- `$ cd ~/catkin_ws/src/ROS-RaspberryPi-Basic/ah_action/src`
+	- `$ touch ah_action_server.py`
+	- `$ chmod +x ah_action_server.py`	change the permissions, to check type `$ ls -la`
+8. Edit the `ah_action_server.py` file like below
+	```sh
+	#!/usr/bin/env python
+
+	import rospy
+	import time
+	import actionlib	# import ini untuk menggunakan SimplaActionServer class
+	from ah_action.msg import TimerAction, TimerGoal, TimerResult
+
+	def doTimer(goal):	# fungsi program timer, fungsi ini dibuat untuk menghitung berapa lama waktu ketika server menerima pesan goal yg dikirim oleh client
+		start_time = time.time()
+		time.sleep(goal.time_to_wait.to_sec())
+		result = TimerResult()
+		result.time_elapsed = rospy.Duration.from_sec(time.time() - start_time)		# ini menghitung berapa lamanya
+		result.updates_sent = 0
+		server.set_succeeded(result)
+
+	rospy.init_node('timer_action_server')
+	server = actionlib.SimpleActionServer('timer', TimerAction, doTimer, False)
+	server.start()
+	rospy.spin()
+	```
+9. Make sure the python script get installed properly and use the right python interpreter
+	- Open CMakelists.txt
+	- Uncomment and edit the line of code like below
+		```sh
+		catkin_install_python(PROGRAMS
+			src/ah_action_server.py
+			DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+		)
+		```
+10. Build the node
+	- `$ cd ~/catkin_ws`
+	- `$ catkin_make`
