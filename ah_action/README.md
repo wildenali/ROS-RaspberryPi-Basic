@@ -109,3 +109,43 @@ References:
 10. Build the node
 	- `$ cd ~/catkin_ws`
 	- `$ catkin_make`
+
+11. Creata a `Client action node` file called `ah_action_client.py`
+	- `$ cd ~/catkin_ws/src/ROS-RaspberryPi-Basic/ah_action/src`
+	- `$ touch ah_action_client.py`
+	- `$ chmod +x ah_action_client.py`	change the permissions, to check type `$ ls -la`
+12. Edit the `ah_action_client.py` file like below
+	```sh
+	#!/usr/bin/env python
+
+	import rospy
+	import actionlib
+	from ah_action.msg import TimerAction, TimerGoal, TimerResult
+
+	rospy.init_node('timer_action_client')		# menamai node
+	client = actionlib.SimpleActionClient('timer', TimerAction)		# menghubungkan ke server yg namanya timer
+	client.wait_for_server()		# tunggu konek ke server
+
+	goal = TimerGoal()
+	goal.time_to_wait = rospy.Duration.from_sec(5.0)	# setting waktu berapa lama waktu yg ditunggu si client, yg akan di kirim ke server
+	client.send_goal(goal)		# kirim data ke server
+	client.wait_for_result()	# tunggu hasilnya
+	print('Time elapsed: %f' %(client.get_result().time_elapsed.to_sec()))	
+	```
+13. Make sure the python script get installed properly and use the right python interpreter
+	- Open CMakelists.txt
+	- Uncomment and edit the line of code like below
+		```sh
+		catkin_install_python(PROGRAMS
+			src/ah_action_server.py
+			src/ah_action_client.py
+			DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+		)
+		```
+14. Build the node
+	- `$ cd ~/catkin_ws`
+	- `$ catkin_make`
+15. Run package
+	- `$ roscore`
+	- Open a new terminal and type `$ rosrun ah_action_server.py`
+	- Open a new terminal and type `$ rosrun ah_action_client.py`
