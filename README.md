@@ -290,3 +290,18 @@ srv have a request and a response
 	- `$ cd ~/catkin_ws/src/ROS-RaspberryPi-Basic/ah_action`
 	- `$ touch README.md`
 3. For further this tutorials about ROS message please visit [https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/ah_action](https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/ah_action)
+
+## `Make a Coffe Pub Sub exercise`
+Exercise how to make a coffe with 3 step:
+- Coffee_ingredients will send messages about what ingredients to use for making coffee
+- Preparing_Hot_Coffe will received data from Coffe_ingredients and
+1. Creating a new ros package
+	- `$ cd ~/catkin_ws/src/ROS-RaspberryPi-Basic`
+	- `$ catkin_create_pkg ai_make_coffee std_msgs rospy`
+	- `$ cd ~/catkin_ws`
+	- `$ catkin_make`
+	- `$ . ~/catkin_ws/devel/setup.bash`
+2. Create README.md file for notes
+	- `$ cd ~/catkin_ws/src/ROS-RaspberryPi-Basic/ai_make_coffee`
+	- `$ touch README.md`
+3. For further this tutorials about ROS message please visit [https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/ai_make_coffee](https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/ai_make_coffee)
