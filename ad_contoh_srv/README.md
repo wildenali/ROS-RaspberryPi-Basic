@@ -42,6 +42,15 @@ References:
 			ad_service.srv
 		)
 		```
+	- Edit on the `catkin_package`
+	```sh
+	catkin_package(
+	#  INCLUDE_DIRS include
+		LIBRARIES aj_service_move_turtlesim
+		CATKIN_DEPENDS rospy std_msgs message_runtime
+		DEPENDS system_lib
+	)
+	```
 6. Build the project
 	- Open a new terminal
 	- `$ cd ~/catkin_ws`
