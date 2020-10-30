@@ -105,9 +105,9 @@ add_service_files(
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
 #  INCLUDE_DIRS include
-#  LIBRARIES ad_contoh_srv
-#  CATKIN_DEPENDS rospy std_msgs
-#  DEPENDS system_lib
+	LIBRARIES ad_contoh_srv
+	CATKIN_DEPENDS rospy std_msgs message_runtime
+	DEPENDS system_lib
 )
 
 ###########
