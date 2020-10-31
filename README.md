@@ -305,3 +305,20 @@ Exercise how to make a coffe with 3 step:
 	- `$ cd ~/catkin_ws/src/ROS-RaspberryPi-Basic/ai_make_coffee`
 	- `$ touch README.md`
 3. For further this tutorials about ROS message please visit [https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/ai_make_coffee](https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/ai_make_coffee)
+
+## `Service Client exercise`
+Exercise how to run a turtlesim node and make it a Square move with input First Name and Last Name 
+- First you have to run the turtlesim node
+- Terminal command will run the project package and included the First and Last Name
+- The server.py will run the server of project package and get First and Last Name from terminal command
+- The client.py will get fullname from server and it will move the turtlesim
+1. Creating a new ros package
+	- `$ cd ~/catkin_ws/src/ROS-RaspberryPi-Basic`
+	- `$ catkin_create_pkg aj_service_move_turtlesim std_msgs rospy`
+	- `$ cd ~/catkin_ws`
+	- `$ catkin_make`
+	- `$ . ~/catkin_ws/devel/setup.bash`
+2. Create README.md file for notes
+	- `$ cd ~/catkin_ws/src/ROS-RaspberryPi-Basic/aj_service_move_turtlesim`
+	- `$ touch README.md`
+3. For further this tutorials about ROS message please visit [https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/aj_service_move_turtlesim](https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/aj_service_move_turtlesim)
