@@ -331,3 +331,17 @@ Exercise how to run a turtlesim node and make it a Square move with input First 
 	- `$ cd ~/catkin_ws/src/ROS-RaspberryPi-Basic/aj_service_move_turtlesim`
 	- `$ touch README.md`
 3. For further this tutorials about ROS message please visit [https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/aj_service_move_turtlesim](https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/aj_service_move_turtlesim)
+
+## `Controlling Robot with ROS over WiFi UDP`
+[ak_remote_control_real_mobile_robot](https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/ak_remote_control_real_mobile_robot)<br/>
+Exercise how to move the real mobile robot with ROS over WiFi 
+1. Creating a new ros package
+	- `$ cd ~/catkin_ws/src/ROS-RaspberryPi-Basic`
+	- `$ catkin_create_pkg ak_remote_control_real_mobile_robot std_msgs rospy`
+	- `$ cd ~/catkin_ws`
+	- `$ catkin_make`
+	- `$ . ~/catkin_ws/devel/setup.bash`
+2. Create README.md file for notes
+	- `$ cd ~/catkin_ws/src/ROS-RaspberryPi-Basic/ak_remote_control_real_mobile_robot`
+	- `$ touch README.md`
+3. For further this tutorials about ROS message please visit [https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/ak_remote_control_real_mobile_robot](https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/ak_remote_control_real_mobile_robot)
