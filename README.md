@@ -345,3 +345,17 @@ Exercise how to move the real mobile robot with ROS over WiFi
 	- `$ cd ~/catkin_ws/src/ROS-RaspberryPi-Basic/ak_remote_control_real_mobile_robot`
 	- `$ touch README.md`
 3. For further this tutorials about ROS message please visit [https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/ak_remote_control_real_mobile_robot](https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/ak_remote_control_real_mobile_robot)
+
+## `Controlling Turtlesim with Button and Potentiometer`
+[al_control_turtlesim_with_button_and_potentiometer](https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/al_control_turtlesim_with_button_and_potentiometer)<br/>
+Exercise how to move the turtlesim node with button and potentiometer in the nodemcu (esp866)
+1. Creating a new ros package
+	- `$ cd ~/catkin_ws/src/ROS-RaspberryPi-Basic`
+	- `$ catkin_create_pkg al_control_turtlesim_with_button_and_potentiometer std_msgs rospy`
+	- `$ cd ~/catkin_ws`
+	- `$ catkin_make`
+	- `$ . ~/catkin_ws/devel/setup.bash`
+2. Create README.md file for notes
+	- `$ cd ~/catkin_ws/src/ROS-RaspberryPi-Basic/al_control_turtlesim_with_button_and_potentiometer`
+	- `$ touch README.md`
+3. For further this tutorials about ROS message please visit [https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/al_control_turtlesim_with_button_and_potentiometer](https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/al_control_turtlesim_with_button_and_potentiometer)
