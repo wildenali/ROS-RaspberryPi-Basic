@@ -247,7 +247,7 @@ srv have a request and a response
 2. Create README.md file for notes
 	- `$ cd ~/catkin_ws/src/ROS-RaspberryPi-Basic/ad_contoh_srv`
 	- `$ touch README.md`
-3. For further this tutorials about ROS message please visit [https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/ad_contoh_srv](https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/ad_contoh_srv)
+3. For further this tutorials please visit [https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/ad_contoh_srv](https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/ad_contoh_srv)
 
 ## `Publisher and Subscriber - Python`
 [ae_publisher_and_subscriber_python](https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/ae_publisher_and_subscriber_python)<br/>
