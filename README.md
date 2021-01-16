@@ -219,7 +219,7 @@ roslaunch is package which use to run file together like node, etc
 2. Create README.md file for notes
 	- `$ cd ~/catkin_ws/src/ROS-RaspberryPi-Basic/ab_roslaunch`
 	- `$ touch README.md`
-3. For further tutorials about ROS Launch please visit [https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/ab_roslaunch](https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/ab_roslaunch)
+3. For further tutorials please visit [https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/ab_roslaunch](https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/ab_roslaunch)
 
 ## `msg`
 [ac_contoh_msg](https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/ac_contoh_msg)<br/>
@@ -233,7 +233,7 @@ msg are simple text file that describe the fields of a ROS message
 2. Create README.md file for notes
 	- `$ cd ~/catkin_ws/src/ROS-RaspberryPi-Basic/ac_contoh_msg`
 	- `$ touch README.md`
-3. For further this tutorials about ROS message please visit [https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/ac_contoh_msg](https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/ac_contoh_msg)
+3. For further this tutorials please visit [https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/ac_contoh_msg](https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/ac_contoh_msg)
 
 ## `srv`
 [ad_contoh_srv](https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/ad_contoh_srv)<br/>
@@ -260,7 +260,7 @@ srv have a request and a response
 2. Create README.md file for notes
 	- `$ cd ~/catkin_ws/src/ROS-RaspberryPi-Basic/ae_publisher_and_subscriber_python`
 	- `$ touch README.md`
-3. For further this tutorials about ROS message please visit [https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/ae_publisher_and_subscriber_python](https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/ae_publisher_and_subscriber_python)
+3. For further this tutorials please visit [https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/ae_publisher_and_subscriber_python](https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/ae_publisher_and_subscriber_python)
 
 ## `Service and Client`
 [af_service_and_client](https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/af_service_and_client)<br/>
@@ -273,7 +273,7 @@ srv have a request and a response
 2. Create README.md file for notes
 	- `$ cd ~/catkin_ws/src/ROS-RaspberryPi-Basic/af_service_and_client`
 	- `$ touch README.md`
-3. For further this tutorials about ROS message please visit [https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/af_service_and_client](https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/af_service_and_client)
+3. For further this tutorials please visit [https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/af_service_and_client](https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/af_service_and_client)
 
 ## `ROSBAG`
 [ag_rosbag](https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/ag_rosbag)<br/>
@@ -283,7 +283,7 @@ srv have a request and a response
 	- `$ mkdir ag_rosbag`
 	- `$ cd ag_rosbag`
 	- `$ touch README.md`
-2. For further this tutorials about ROS message please visit [https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/ag_rosbag](https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/ag_rosbag)
+2. For further this tutorials please visit [https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/ag_rosbag](https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/ag_rosbag)
 
 ## `Action`
 [ah_action](https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/ah_action)<br/>
@@ -296,7 +296,7 @@ srv have a request and a response
 2. Create README.md file for notes
 	- `$ cd ~/catkin_ws/src/ROS-RaspberryPi-Basic/ah_action`
 	- `$ touch README.md`
-3. For further this tutorials about ROS message please visit [https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/ah_action](https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/ah_action)
+3. For further this tutorials please visit [https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/ah_action](https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/ah_action)
 
 ## `Make a Coffe Pub Sub exercise`
 [ai_make_coffee](https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/ai_make_coffee)<br/>
@@ -312,7 +312,7 @@ Exercise how to make a coffe with 3 step:
 2. Create README.md file for notes
 	- `$ cd ~/catkin_ws/src/ROS-RaspberryPi-Basic/ai_make_coffee`
 	- `$ touch README.md`
-3. For further this tutorials about ROS message please visit [https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/ai_make_coffee](https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/ai_make_coffee)
+3. For further this tutorials please visit [https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/ai_make_coffee](https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/ai_make_coffee)
 
 ## `Service Client exercise`
 [aj_service_move_turtlesim](https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/aj_service_move_turtlesim)<br/>
@@ -330,7 +330,7 @@ Exercise how to run a turtlesim node and make it a Square move with input First 
 2. Create README.md file for notes
 	- `$ cd ~/catkin_ws/src/ROS-RaspberryPi-Basic/aj_service_move_turtlesim`
 	- `$ touch README.md`
-3. For further this tutorials about ROS message please visit [https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/aj_service_move_turtlesim](https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/aj_service_move_turtlesim)
+3. For further this tutorials please visit [https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/aj_service_move_turtlesim](https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/aj_service_move_turtlesim)
 
 ## `Controlling Robot with ROS over WiFi UDP`
 [ak_remote_control_real_mobile_robot](https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/ak_remote_control_real_mobile_robot)<br/>
@@ -344,7 +344,7 @@ Exercise how to move the real mobile robot with ROS over WiFi
 2. Create README.md file for notes
 	- `$ cd ~/catkin_ws/src/ROS-RaspberryPi-Basic/ak_remote_control_real_mobile_robot`
 	- `$ touch README.md`
-3. For further this tutorials about ROS message please visit [https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/ak_remote_control_real_mobile_robot](https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/ak_remote_control_real_mobile_robot)
+3. For further this tutorials please visit [https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/ak_remote_control_real_mobile_robot](https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/ak_remote_control_real_mobile_robot)
 
 ## `Controlling Turtlesim with Button and Potentiometer`
 [al_control_turtlesim_with_button_and_potentiometer](https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/al_control_turtlesim_with_button_and_potentiometer)<br/>
@@ -358,4 +358,4 @@ Exercise how to move the turtlesim node with button and potentiometer in the nod
 2. Create README.md file for notes
 	- `$ cd ~/catkin_ws/src/ROS-RaspberryPi-Basic/al_control_turtlesim_with_button_and_potentiometer`
 	- `$ touch README.md`
-3. For further this tutorials about ROS message please visit [https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/al_control_turtlesim_with_button_and_potentiometer](https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/al_control_turtlesim_with_button_and_potentiometer)
+3. For further this tutorials please visit [https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/al_control_turtlesim_with_button_and_potentiometer](https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/al_control_turtlesim_with_button_and_potentiometer)
