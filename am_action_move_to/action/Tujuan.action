@@ -1,0 +1,8 @@
+# goal
+int64 target_tujuan
+---
+# result
+int64 hasil_tujuan
+---
+# feedback
+int64 feedback_tujuan
