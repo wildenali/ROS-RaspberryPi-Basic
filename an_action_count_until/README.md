@@ -93,13 +93,13 @@ Exercise how to make an action file
 	- `$ ls`
 	- The result will show up 7 new file
 	```sh
-	TujuanActionFeedback.msg
-	TujuanActionGoal.msg
-	TujuanAction.msg
-	TujuanActionResult.msg
-	TujuanFeedback.msg
-	TujuanGoal.msg
-	TujuanResult.msg
+	CountUntilActionFeedback.msg
+	CountUntilActionGoal.msg
+	CountUntilAction.msg
+	CountUntilActionResult.msg
+	CountUntilFeedback.msg
+	CountUntilGoal.msg
+	CountUntilResult.msg
 	```
 	
 	- How to check definition action
