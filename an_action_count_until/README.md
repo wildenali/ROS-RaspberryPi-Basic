@@ -111,3 +111,23 @@ Exercise how to make an action file
 		- `$ cat CountUntilGoal.msg`
 		- `$ cat CountUntilResult.msg`
 
+## Create a Server and Client Action File
+1. Create a new directory for action
+	- `$ cd ~/catkin_ws/src/ROS-RaspberryPi-Basic/an_action_count_until/src`
+	- `$ touch count_until_server.py`
+	- `$ chmod +x count_until_server.py`
+	- Make some code
+
+2. Build the Server File
+	- `$ cd ~/catkin_ws/`
+	- `$ catkin_make`
+
+3. Run the Server FIle
+	- `$ roscore`
+	- Open a new terminal
+	- `$ catkin_make`
+	- `$ rosrun an_action_count_until count_until_server.py`
+
+4. Check the rosnode and rostopic
+	- `$ rosnode list`
+	- `$ rosnode list`
