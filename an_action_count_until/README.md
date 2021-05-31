@@ -1,9 +1,8 @@
 
 # Move the Robot to Desired Waypoint
 
-Exercise how to make an action file
-
-# A. a_count_until_client.py a_count_until_server.py
+# a_count_until_client.py a_count_until_server.py
+How to use a basic Action Client Server
 1. Create a new directory for action
     - `cd ~/catkin_ws/src/ROS-RaspberryPi-Basic/an_action_count_until`
     - `mkdir action`
@@ -22,7 +21,6 @@ Exercise how to make an action file
 	#feedback
 	float64 percentage
 	```
-
 
 3. Edit the package.xml
 	```sh
@@ -67,12 +65,6 @@ Exercise how to make an action file
         CATKIN_DEPENDS actionlib_msgs rospy std_msgs
         #  DEPENDS system_lib
     )
-    
-    catkin_install_python(PROGRAMS
-	  src/a_count_until_server.py
-	  src/a_count_until_client.py
-	  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
-	)
 	```
 
 5. Build the package
@@ -116,47 +108,63 @@ Exercise how to make an action file
 	`$ cat CountUntilGoal.msg`
 	`$ cat CountUntilResult.msg`
 
-7. Create a server file for action
+7. Create a server file
 	- `$ cd ~/catkin_ws/src/ROS-RaspberryPi-Basic/an_action_count_until/src`
 	- `$ touch a_count_until_server.py`
 	- `$ chmod +x a_count_until_server.py`
 	- Make some code
 
-8. Build the Server File
+8. Open CMakelist.txt file and add some code like below
+	````sh
+	catkin_install_python(PROGRAMS
+		src/a_count_until_server.py
+		DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+	)
+	```
+
+9. Build the Server File
 	- `$ cd ~/catkin_ws/`
 	- `$ catkin_make`
 
-9. Run the Server FIle
+10. Run the Server FIle
 	- `$ roscore`
 	- Open a new terminal
 	- `$ catkin_make`
 	- `$ rosrun an_action_count_until a_count_until_server.py`
 
-10. Check the rosnode and rostopic
+11. Check the rosnode and rostopic
 	- `$ rosnode list`
-	- `$ rosnode list`
+	- `$ rostopic list`
 	
-11. Create a client file for action
+12. Create a client file for action
 	- `$ cd ~/catkin_ws/src/ROS-RaspberryPi-Basic/an_action_count_until/src`
-	- `$ touch count_until_client.py`
+	- `$ touch a_count_until_client.py`
 	- `$ chmod +x a_count_until_client.py`
 	- Make some code
 
-12. Build the Server File
+13. Open CMakelist.txt file and add some code like below
+	````sh
+	catkin_install_python(PROGRAMS
+		src/a_count_until_client.py
+		DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+	)
+	```
+
+14. Build the Server File
 	- `$ cd ~/catkin_ws/`
 	- `$ catkin_make`
 
-13. Run the Server FIle
+15. Run the Client File
 	- `$ roscore`
 	- Open a new terminal
 	- `$ catkin_make`
 	- `$ rosrun an_action_count_until a_count_until_client.py`
 
-14. Check the rosnode and rostopic
+16. Check the rosnode and rostopic
 	- `$ rosnode list`
-	- `$ rosnode list`
+	- `$ rostopic list`
 	
-15. Run Server and Client Action
+17. Run Server and Client Action
 	- `$ roscore`
 	- `$ rosrun an_action_count_until a_count_until_server.py`
 	- `$ rosrun an_action_count_until a_count_until_client.py`
