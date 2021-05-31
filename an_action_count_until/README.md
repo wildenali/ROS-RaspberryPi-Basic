@@ -68,6 +68,12 @@ Exercise how to make an action file
         CATKIN_DEPENDS actionlib_msgs rospy std_msgs
         #  DEPENDS system_lib
     )
+    
+    catkin_install_python(PROGRAMS
+	  src/a_count_until_server.py
+	  src/a_count_until_client.py
+	  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+	)
 	```
 
 4. Build the package
@@ -111,11 +117,11 @@ Exercise how to make an action file
 		- `$ cat CountUntilGoal.msg`
 		- `$ cat CountUntilResult.msg`
 
-## Create a Server and Client Action File
-1. Create a new directory for action
+## Create a Server Action File
+1. Create a server file for action
 	- `$ cd ~/catkin_ws/src/ROS-RaspberryPi-Basic/an_action_count_until/src`
-	- `$ touch count_until_server.py`
-	- `$ chmod +x count_until_server.py`
+	- `$ touch a_count_until_server.py`
+	- `$ chmod +x a_count_until_server.py`
 	- Make some code
 
 2. Build the Server File
@@ -126,8 +132,34 @@ Exercise how to make an action file
 	- `$ roscore`
 	- Open a new terminal
 	- `$ catkin_make`
-	- `$ rosrun an_action_count_until count_until_server.py`
+	- `$ rosrun an_action_count_until a_count_until_server.py`
 
 4. Check the rosnode and rostopic
 	- `$ rosnode list`
 	- `$ rosnode list`
+	
+## Create a Client Action File
+1. Create a client file for action
+	- `$ cd ~/catkin_ws/src/ROS-RaspberryPi-Basic/an_action_count_until/src`
+	- `$ touch count_until_client.py`
+	- `$ chmod +x a_count_until_client.py`
+	- Make some code
+
+2. Build the Server File
+	- `$ cd ~/catkin_ws/`
+	- `$ catkin_make`
+
+3. Run the Server FIle
+	- `$ roscore`
+	- Open a new terminal
+	- `$ catkin_make`
+	- `$ rosrun an_action_count_until a_count_until_client.py`
+
+4. Check the rosnode and rostopic
+	- `$ rosnode list`
+	- `$ rosnode list`
+	
+## Run Server and Client Action
+	- `$ roscore`
+	- `$ rosrun an_action_count_until a_count_until_server.py`
+	- `$ rosrun an_action_count_until a_count_until_client.py`
