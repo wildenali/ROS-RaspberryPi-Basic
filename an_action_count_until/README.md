@@ -3,7 +3,7 @@
 
 Exercise how to make an action file
 
-## Create an Action File
+# 1. Create an Action File
 1. Create a new directory for action
     - `cd ~/catkin_ws/src/ROS-RaspberryPi-Basic/an_action_count_until`
     - `mkdir action`
@@ -24,7 +24,7 @@ Exercise how to make an action file
 	```
 
 
-## Edit the package.xml and CMakeLists.txt
+### 1.1 Edit the package.xml and CMakeLists.txt
 1. Open package.xml file and add some code like below
 	```sh
 	<buildtool_depend>catkin</buildtool_depend>
@@ -117,7 +117,7 @@ Exercise how to make an action file
 		- `$ cat CountUntilGoal.msg`
 		- `$ cat CountUntilResult.msg`
 
-## Create a Server Action File
+### 1.2 Create a Server Action File
 1. Create a server file for action
 	- `$ cd ~/catkin_ws/src/ROS-RaspberryPi-Basic/an_action_count_until/src`
 	- `$ touch a_count_until_server.py`
@@ -159,7 +159,7 @@ Exercise how to make an action file
 	- `$ rosnode list`
 	- `$ rosnode list`
 	
-## Run Server and Client Action
+### 1.3 Run Server and Client Action
 	- `$ roscore`
 	- `$ rosrun an_action_count_until a_count_until_server.py`
 	- `$ rosrun an_action_count_until a_count_until_client.py`
