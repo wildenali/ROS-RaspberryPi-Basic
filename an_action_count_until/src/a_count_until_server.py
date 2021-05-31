@@ -23,13 +23,15 @@ class CountUntilServer:
     self._counter = 0
     rate = rospy.Rate(1.0/wait_duration)
 
-    while self_counter < max_number:
+    while self._counter < max_number:
       self._counter += 1
+      rospy.loginfo(self._counter)
       rate.sleep()
 
     result = CountUntilResult()
     result.count = self._counter
-    slef._as.set_succeeded(result)
+    rospy.loginfo("Send goal result to client")
+    self._as.set_succeeded(result)
 
 
 if __name__ == '__main__':
