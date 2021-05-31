@@ -64,6 +64,7 @@ find_package(catkin REQUIRED COMPONENTS
 add_action_files(
   FILES
   CountUntil.action
+  CountUntilAsync.action
 )
 
 ## Generate added messages and services with any dependencies listed here
@@ -162,6 +163,8 @@ include_directories(
 catkin_install_python(PROGRAMS
   src/a_count_until_server.py
   src/a_count_until_client.py
+  src/b_count_until_server_async.py
+  src/b_count_until_client_async.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 
