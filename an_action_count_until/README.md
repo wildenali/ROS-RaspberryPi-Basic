@@ -3,14 +3,14 @@
 
 Exercise how to make an action file
 
-# 1. Create an Action File
-1. Create a new directory for action
+# 1. Simple Action Client Server Basic
+A. Create a new directory for action
     - `cd ~/catkin_ws/src/ROS-RaspberryPi-Basic/an_action_count_until`
     - `mkdir action`
     - `cd action`
     - `touch CountUntil.action`
 
-2. Create an Action definition
+B. Create an Action definition
 	```sh
 	#goal
 	int64 max_number
@@ -25,7 +25,7 @@ Exercise how to make an action file
 
 
 ### 1.1 Edit the package.xml and CMakeLists.txt
-1. Open package.xml file and add some code like below
+A. Open package.xml file and add some code like below
 	```sh
 	<buildtool_depend>catkin</buildtool_depend>
 
@@ -43,7 +43,7 @@ Exercise how to make an action file
 	<exec_depend>message_generation</exec_depend>
 	```
 
-2. Make sure the python script get installed properly and use the right python interpreter. Open CMakelist.txt file and add some code like below
+B. Make sure the python script get installed properly and use the right python interpreter. Open CMakelist.txt file and add some code like below
 	```sh
 	find_package(catkin REQUIRED COMPONENTS
         actionlib_msgs
@@ -76,11 +76,11 @@ Exercise how to make an action file
 	)
 	```
 
-4. Build the package
+C. Build the package
 	- `$ cd ~/catkin_ws/`
 	- `$ catkin_make`
 
-5. Check the action definition
+D. Check the action definition
 	- `$ cd ~/catkin_ws/`
 	- `$ cd devel/include/an_action_count_until`
 	- `$ ls`
@@ -118,48 +118,48 @@ Exercise how to make an action file
 		- `$ cat CountUntilResult.msg`
 
 ### 1.2 Create a Server Action File
-1. Create a server file for action
+A. Create a server file for action
 	- `$ cd ~/catkin_ws/src/ROS-RaspberryPi-Basic/an_action_count_until/src`
 	- `$ touch a_count_until_server.py`
 	- `$ chmod +x a_count_until_server.py`
 	- Make some code
 
-2. Build the Server File
+B. Build the Server File
 	- `$ cd ~/catkin_ws/`
 	- `$ catkin_make`
 
-3. Run the Server FIle
+C. Run the Server FIle
 	- `$ roscore`
 	- Open a new terminal
 	- `$ catkin_make`
 	- `$ rosrun an_action_count_until a_count_until_server.py`
 
-4. Check the rosnode and rostopic
+D. Check the rosnode and rostopic
 	- `$ rosnode list`
 	- `$ rosnode list`
 	
-## Create a Client Action File
-1. Create a client file for action
+### 1.3 Create a Client Action File
+A. Create a client file for action
 	- `$ cd ~/catkin_ws/src/ROS-RaspberryPi-Basic/an_action_count_until/src`
 	- `$ touch count_until_client.py`
 	- `$ chmod +x a_count_until_client.py`
 	- Make some code
 
-2. Build the Server File
+B. Build the Server File
 	- `$ cd ~/catkin_ws/`
 	- `$ catkin_make`
 
-3. Run the Server FIle
+C. Run the Server FIle
 	- `$ roscore`
 	- Open a new terminal
 	- `$ catkin_make`
 	- `$ rosrun an_action_count_until a_count_until_client.py`
 
-4. Check the rosnode and rostopic
+D. Check the rosnode and rostopic
 	- `$ rosnode list`
 	- `$ rosnode list`
 	
-### 1.3 Run Server and Client Action
+### 1.4 Run Server and Client Action
 	- `$ roscore`
 	- `$ rosrun an_action_count_until a_count_until_server.py`
 	- `$ rosrun an_action_count_until a_count_until_client.py`
