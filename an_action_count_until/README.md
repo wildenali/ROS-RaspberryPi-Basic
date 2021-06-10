@@ -3,6 +3,10 @@
 
 [Action lib msg](http://docs.ros.org/en/kinetic/api/actionlib_msgs/html/msg/GoalStatus.html)
 
+Debug Action using rqt
+`$ rqt_graph`
+uncentang Action label on rqt graph
+
 # a_count_until_client.py a_count_until_server.py
 How to use a basic Action Client Server
 1. Create a new directory for action
