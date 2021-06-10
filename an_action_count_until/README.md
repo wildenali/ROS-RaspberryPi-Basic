@@ -1,6 +1,8 @@
 
 # Move the Robot to Desired Waypoint
 
+[Action lib msg](http://docs.ros.org/en/kinetic/api/actionlib_msgs/html/msg/GoalStatus.html)
+
 # a_count_until_client.py a_count_until_server.py
 How to use a basic Action Client Server
 1. Create a new directory for action
