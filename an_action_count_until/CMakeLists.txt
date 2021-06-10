@@ -169,6 +169,8 @@ catkin_install_python(PROGRAMS
   src/c_count_until_client_feedback.py
   src/d_count_until_server_goal.py
   src/d_count_until_client_goal.py
+  src/e_count_until_server_cancel_goal.py
+  src/e_count_until_client_cancel_goal.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 
