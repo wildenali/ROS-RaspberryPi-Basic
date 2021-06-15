@@ -386,3 +386,16 @@ Exercise how to move the turtlesim node with button and potentiometer in the nod
 	- `$ touch README.md`
 3. For further this tutorials please visit [https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/an_action_count_until](https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/an_action_count_until)
 
+## `Action MoveRobot`
+[ao_action_move_robot](https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/ao_action_move_robot)<br/>
+1. Creating a new ros package
+	- `$ cd ~/catkin_ws/src/ROS-RaspberryPi-Basic`
+	- `$ catkin_create_pkg ao_action_move_robot std_msgs rospy`
+	- `$ cd ~/catkin_ws`
+	- `$ catkin_make`
+	- `$ . ~/catkin_ws/devel/setup.bash`
+2. Create README.md file for notes
+	- `$ cd ~/catkin_ws/src/ROS-RaspberryPi-Basic/ao_action_move_robot`
+	- `$ touch README.md`
+3. For further this tutorials please visit [https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/ao_action_move_robot](https://github.com/wildenali/ROS-RaspberryPi-Basic/tree/master/ao_action_move_robot)
+
