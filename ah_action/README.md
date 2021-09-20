@@ -19,7 +19,6 @@ References:
 	---
 	duration time_elapsed
 	duration time_remaining
-	---
 	```
 4. Make sure these two lines are in it and uncommented the `message_generation` and `message_runtime` in the package.xml file
 	- Open package.xml file
@@ -29,8 +28,10 @@ References:
 		<build_export_depend>message_generation</build_export_depend>
 		
 		<build_depend>actionlib_msgs</build_depend>
-		<build_export_depend>actionlib_msgs</build_export_depend>
+		<build_depend>actionlib</build_depend>
 		<exec_depend>actionlib_msgs</exec_depend>
+		<exec_depend>actionlib</exec_depend>
+		<build_export_depend>actionlib_msgs</build_export_depend>
 		```
 5. Edit on the CMakelists.txt file to add ROS msg
 	- Open CMakelists.txt
